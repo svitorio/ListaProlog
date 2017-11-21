@@ -1,0 +1,19 @@
+
+maiorT(M,CONT):-
+	CONT =< 5,
+
+	write('write outro numero:'),
+	read(A),
+	A > M,
+	M is A,
+	CONT is CONT+1,
+	maiorT(M,CONT),!.
+
+
+questao1:-
+	write('Digite um numero'),
+	read(A),
+	M is A,
+	CONT is 1,
+	maiorT(M,CONT).
+
